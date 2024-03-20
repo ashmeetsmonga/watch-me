@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 
 const Header = () => {
   return (
-    <div className="flex justify-between items-center fixed top-0 left-0 px-20 py-10 w-full bg-gradient-to-b from-black">
+    <div className="flex justify-between items-center fixed top-0 left-0 px-20 py-10 w-full bg-gradient-to-b from-black z-50">
       <Logo />
       <Navbar />
       Search
