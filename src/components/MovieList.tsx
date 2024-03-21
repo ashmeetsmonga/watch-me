@@ -39,7 +39,7 @@ const MovieList: React.FC<MovieListProps> = ({ category, movieList }) => {
       </div>
       <div className="flex justify-between mt-4 flex-wrap">
         {movieList.slice(movieIdx[0], movieIdx[1]).map((movie) => (
-          <Card imgUrl={movie.poster_path + "?" + time} key={movie.id} />
+          <Card imgUrl={movie.poster_path + "?" + time} key={movie.id} movieId={movie.id} />
         ))}
       </div>
     </div>

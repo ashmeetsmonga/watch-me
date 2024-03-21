@@ -10,7 +10,7 @@ const Home = async () => {
   const { data: trendingMovies }: { data: MovieAPI } = await axios.get(TRENDING_MOVIE_URL);
   const { data: trendingTv }: { data: MovieAPI } = await axios.get(TRENDING_TV_URL);
   return (
-    <div className="bg-black">
+    <div>
       <Hero movieList={popularMovies.results} />
       <div className="p-20 flex flex-col gap-14">
         <MovieList category="Trending Movies" movieList={trendingMovies.results} />

@@ -6,3 +6,4 @@ export const POPULAR_URL = `${BASE_URL}/movie/popular?api_key=${API_KEY}`;
 export const TRENDING_MOVIE_URL = `${BASE_URL}/trending/movie/day?api_key=${API_KEY}`;
 export const TRENDING_TV_URL = `${BASE_URL}/trending/tv/day?api_key=${API_KEY}`;
 export const BACKDROP_IMAGE_URL = IMAGE_URL;
+export const MOVIE_DETAILS = `${BASE_URL}/movie/{0}?api_key=${API_KEY}`;
