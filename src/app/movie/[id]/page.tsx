@@ -7,11 +7,10 @@ import Details from "./components/Details";
 
 const Page = async ({ params: { id } }: { params: { id: string } }) => {
   const { data: movieDetails }: { data: MovieDetailsDTO } = await axios.get(MOVIE_DETAILS.replace("{0}", id));
-  console.log(movieDetails);
   return (
     <div className="">
       <MovieHeader title={movieDetails.title} img={movieDetails.backdrop_path} overview={movieDetails.overview} />
-      <Details description={movieDetails.overview} />
+      <Details description={movieDetails.overview} movieId={movieDetails.id} />
     </div>
   );
 };
