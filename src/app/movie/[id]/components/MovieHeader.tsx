@@ -8,7 +8,7 @@ interface MovieHeaderProps {
 
 const MovieHeader: FC<MovieHeaderProps> = ({ title, overview, img }) => {
   return (
-    <div>
+    <div className="relative">
       <img src={"https://image.tmdb.org/t/p/original" + img} alt="hero" className="h-screen w-full object-cover" />
       <div className="absolute bottom-0 pb-10 w-full flex flex-col items-center bg-gradient-to-b from-transparent to-black">
         <div className="w-1/2 flex flex-col items-center">
