@@ -36,7 +36,7 @@ export interface MovieDetailsDTO {
   poster_path: string;
   production_companies: ProductionCompany[];
   production_countries: ProductionCountry[];
-  release_date: Date;
+  release_date: string;
   revenue: number;
   runtime: number;
   spoken_languages: SpokenLanguage[];
@@ -99,4 +99,29 @@ export interface Cast {
   order?: number;
   department?: string;
   job?: string;
+}
+
+export interface ReviewAPI {
+  id: number;
+  page: number;
+  results: Review[];
+  total_pages: number;
+  total_results: number;
+}
+
+export interface Review {
+  author: string;
+  author_details: AuthorDetails;
+  content: string;
+  created_at: Date;
+  id: string;
+  updated_at: Date;
+  url: string;
+}
+
+export interface AuthorDetails {
+  name: string;
+  username: string;
+  avatar_path: null;
+  rating: number;
 }
